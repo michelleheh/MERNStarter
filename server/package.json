@@ -1,0 +1,14 @@
+{
+  "name": "sever",
+  "version": "1.0.0",
+  "description": "Boiler Plate for setting up Node/Express Server with MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michelle He",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

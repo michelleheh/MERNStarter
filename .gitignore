@@ -1,0 +1,7 @@
+# client
+client/node_modules
+npm-debug.log
+
+# server
+server/node_modules
+npm-debug.log
