@@ -27,3 +27,28 @@ npm install
 ```
 node server.js
 ```
+
+## MongoDB
+
+start running a MongoDB instance
+```
+mongod
+```
+Connect to the mongoDB directly in terminal
+```
+mongo
+```
+
+to see mongodb processes that are running
+```
+ps -ax | grep mongo
+```
+
+basic mango shell commands
+```
+show dbs
+use [db name]
+show collections
+use [collection names]
+db.[collection name].find()
+```
