@@ -1,5 +1,7 @@
 # MongoDB Node/Express React/Redux Starter
 
+This is a boiler plate repo for starting a project with MERN stack
+
 ## client
 
 The client side files are cloned from 
@@ -27,6 +29,8 @@ npm install
 ```
 node server.js
 ```
+
+An example api point is setup to communicate with MongoDB
 
 ## MongoDB
 
