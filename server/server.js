@@ -1,12 +1,15 @@
 const express = require('express');
 const app = express();
-const bodyParser = require('body-parser');
+
+const mongoose = require('mongoose');
 
 const port = 3000;
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+// connect to mongo database named myApp
+mongoose.connect('mongodb://localhost/myApp');
 
-app.use('/', express.static(__dirname + '/../client'));
+// configure our server with all the middleware and routing
+require('./config/middleware.js')(app, express);
+require('./config/routes.js')(app, express);
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
